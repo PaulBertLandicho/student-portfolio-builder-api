@@ -1,0 +1,29 @@
+.onboarding-carousel {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.onboarding-slide {
+  margin: 20px auto;
+  display: none;
+}
+
+.dots {
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #f5511e;
+}

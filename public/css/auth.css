@@ -1,0 +1,656 @@
+/* Login CSS */
+
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-between;
+  width: 65rem;
+}
+
+#logo {
+  height: 300px;
+}
+.logo1 {
+  margin-top: 30px;
+}
+
+.logos img{
+  width: 250px;
+}
+.logo2 {
+  margin-top: 40px;
+}
+
+#forgot-password {
+  color: #F5511E;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 50px 230px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+#register-txt {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#login-btn {
+  text-decoration: none;
+  color: #F5511E;
+}
+
+/* Registration CSS */
+
+.registration-form {
+  display: flex;
+  justify-content: space-between;
+  width: 65rem;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+}
+
+#login-txt {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#register-btn {
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.linklogo img{
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+  }
+
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #logo {
+    height: 250px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+/* Profile Setup CSS */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Grid styling for skills */
+.grid-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 5px;
+  gap: 15px;
+}
+
+
+/* Individual skill item styling */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers the image vertically */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 10px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #F5511E99;
+}
+
+.skill-item img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+/* Style for selected skill items */
+.skill-item.selected {
+  background-color: #F5511E;
+}
+
+
+/* Text styling for skill name */
+.skill-item p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.arrow-icon{
+ color: #F5511E;
+ font-size: 55px;
+ font-weight: bold;
+
+}
+
+
+.button-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+  justify-content: center; /* Center-aligns the whole container horizontally */
+  gap: 180px; /* Space between the back-arrow and NEXT button */
+  margin-top: 15px;
+}
+
+.back-arrow .fas {
+  font-size:48px;
+  color: #F5511E;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  padding: 10px 10px;
+  width: 100px;
+  background-color: #F5511E;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.add-btn{
+  background-color: lightgray;
+
+}
+
+.add-icon  {
+  color: #F5511E; 
+  font-size: 24px;
+  margin: 0px;
+  float: left;
+  margin-left: 25px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.form-setup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #F5511E;
+}
+
+#pfp {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#fileInput {
+  display: none;
+}
+
+.camera-icon-bg {
+  width: 40px;
+  height: 40px;
+  background-color: #F5511E;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cam {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.upload-txt {
+  font-size: 35px;
+  font-weight: 500;
+  color: #F5511E;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.option {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+input[type="radio"]:checked {
+  background-color: #F5511E;
+}
+
+.note {
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* Modal Overlay */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.modal-overlay.show {
+  opacity: 5;
+  visibility: visible;
+}
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20px; 
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 85%; 
+}
+.modal-content.show {
+  transform: translateY(0);
+}
+  
+  .modal-overlay.show .modal-content {
+      transform: translateY(0);
+  }
+  
+
+
+  #closeModal {
+    background: darkgreen;
+    border-radius: 10%;
+    width: 100px;
+    cursor: pointer;
+    padding: 1px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Icons */
+
+i {
+  color: #F5511E;
+  font-size: 20px;
+  margin: 24px 8px 0 0;
+  cursor: pointer;
+}
+
+.line {
+  border: none;
+  height: 1px; 
+  background-color: #F5511E; 
+  margin-top: 20px; 
+}
+/* Professional-Grid  */
+
+.grid-category {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 5px; /* Add spacing between items */
+  height: 620px; /* Set a fixed height to make it scrollable */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 15px; /* Optional padding for aesthetics */
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.category-item img {
+  width: 190px;
+  height: 190px;
+  border-radius: 20px;
+}
+
+/* Style for selected skill items */
+.category-item.selected {
+  color: white;
+}
+
+/* Check icon overlay centered on the image */
+.category-item.selected::after {
+  content: '\f00c'; /* Font Awesome check icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center exactly */
+  font-size: 24px; /* Adjust as needed */
+  color: whitesmoke;
+  background-color: #F5511E;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.option .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  height: 90px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.option label {
+  margin-right: 10px;
+}
+
+.option input[type="radio"] {
+  margin-left: auto; 
+}
+
+
+.option input[type="radio"] {
+  margin-left: auto; 
+}
+
+
+
+
+/* Intro CSS */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+.onboarding-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  width: 100vw;
+}
+
+.onboarding-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.onboarding-slide {
+  flex: 0 0 84%;
+  scroll-snap-align: start;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.onboarding-slide h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.onboarding-slide p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.onboarding-slide button {
+  background-color: white;
+  color: #333;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.slider {
+  display: none;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.dots label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dots label.active {
+  background-color: maroon;
+}
+
+/* Fade-Out Transition */
+
+#splash-screen {
+  background-color: white;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: opacity 1.5s ease;
+}
+
+#content {
+  display: none;
+}
+
+
+/* Loading-Screen */
+
+.futuristic-header {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  color: #F5511E99; /* Neon cyan color */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.loading-icon {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #F5511E;
+  border-top: 8px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.loading-text p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInText 1s forwards;
+}
+.loading-text .fas {
+  color:  #F5511E;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+#text1, #text2, #text3, #text4, #text5 {
+  opacity: 0;
+}
+
+.futuristic-btn {
+  padding: 15px 40px;
+  background-color: #F5511E;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  display: none;
+}
+
+.futuristic-btn:hover {
+  background-color: #F5511E99;
+  color: #FFF;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#loadingHeader, .loading-text p, #getStartedBtn {
+  transition: opacity 0.5s ease-in-out;
+}
+

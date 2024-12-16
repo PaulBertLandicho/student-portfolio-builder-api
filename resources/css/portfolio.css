@@ -1,0 +1,619 @@
+/* Dark theme styles */
+.dark-theme {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.dark-theme .navbar {
+  background-color: #333333;
+}
+
+.dark-theme .menu-content {
+  background-color: #444444;
+}
+
+.dark-theme .search-container input {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-theme .modal-box {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body {
+    background-color: rgb(27, 32, 37); 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+  }
+  
+  .text h2 {
+    color: white; /* Text color */
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.username h2 {
+  color: white; /* Text color */
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.content{
+  background-color: #3A3B3C;
+  height: 500px;
+  border-radius: 10px;
+  width: 390px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+/* Skills */
+
+.skill-item.selected {
+  border: 2px solid #4CAF50;
+}
+
+  .delete-button {
+      position: absolute; /* Position the button absolutely */
+      top: 5px; /* Space from the top */
+      right: 5px; /* Space from the right */
+      background: none; /* Remove default background */
+      border: none; /* Remove default border */
+      cursor: pointer; /* Pointer cursor */
+      z-index: 1; /* Ensure it is above other elements */
+  }
+
+  .skill-icon {
+      width: 50px; /* Adjust width as needed */
+      height: 50px; /* Adjust height as needed */
+  }
+
+.skill-display {
+  position: relative; /* Allow positioning of child elements */
+  display: inline-block; /* Keep items inline */
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.skill-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.grid-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 5px;
+  margin-top: 30px;
+  gap: 5px;
+  overflow-y: auto;
+
+}
+
+.skill-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.skill-icon {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+}
+
+/* Profession */
+
+.profession-icon {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+.grid-professions {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.profession-icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.profession-text {
+  color: white;
+}
+
+
+/*  Profilepic */
+
+.page {
+  margin: 0;
+  background-image: url('https://i.pinimg.com/564x/d0/64/5a/d0645a0ce8178eea07e699158cc4f7d0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  margin-bottom: 20px;
+
+}
+
+.about-image img {
+  display: block;
+  margin: auto;
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 40px;
+  top: 30px; /* Moves the image down */
+}
+
+/*  Aboutme */
+
+#aboutMeDisplay {
+  margin-top: 5px;
+  margin-left: 50px;
+  color: white;
+}
+.container {
+  height: auto;
+}
+
+.section h1{
+  color: white;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#aboutMeText {
+  width: 288px;
+
+}
+
+.aboutbutton {
+  margin-top: 10px;
+  margin-left: 130px;
+  align-items: center;
+  color:#F5511E;
+}
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Main-Header */
+
+.image img {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+}
+
+.input-icon-wrapper i {
+  position: absolute;
+  left: 23px;
+  top: 5px;
+  color: #F5511E;
+  }
+
+  #userSearchInput {
+  width: 200px;
+  margin-left: 18px;
+  padding: 5px;
+  padding-left: 30px; /* Space for the background icon */
+  background-position: 10px center; /* Position icon within input */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+  .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  margin-right: 50px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+  }
+  .search-results p {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  }
+  
+  .search-results .user-result {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd; /* Optional: Divider between results */
+}
+
+  .search-results .user-result:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+ .user-image {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  border-radius: 50%; /* Make image circular */
+  margin-right: 10px; /* Space between image and name */
+}
+  .menu-button .fa{
+  font-size: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 5px; /* Adds space between search and menu icons */
+  color: #F5511E;
+  transition: transform 0.3s ease;
+  font-size: 35px;
+  }
+
+  .fas {
+      color: #F5511E;
+  }
+
+  .menu-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+  width: 150px;
+  height: 120px;
+  }
+
+  .menu-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #F5511E;
+  }
+
+  .navbar {
+  width: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  }
+
+  .grid-professions {
+    margin-top: 20px;
+    display: flex; /* Change to flex for horizontal alignment */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    padding: 20px; /* Padding around the grid */
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.professions-text {
+    color: #F5511E;
+}
+
+.professions-display {
+    padding:  10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    scroll-snap-align: start; /* Snap alignment for scrolling */
+    min-width: 200px; /* Minimum width for each item */
+    transition: transform 0.2s;
+}
+
+.professions-display img {
+    width: 270px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.professions-item:hover {
+    transform: scale(1.05);
+}
+
+.professions-item p {
+    margin: 8px 0;
+}
+
+ /* Project CSS */
+
+ .project-link {
+    text-decoration: none;
+}
+.project-grid {
+    margin-top: 20px;
+    display: flex; /* Change to flex for horizontal alignment */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    gap: 10px; /* Space between items */
+    padding: 20px; /* Padding around the grid */
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.project-text {
+    color: #F5511E;
+}
+
+.project-item {
+    position: relative; /* Ensures relative positioning for child elements like the delete button */
+    background-color: lightgray;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+    min-width: 200px;
+    transition: transform 0.2s;
+}
+
+.floating-button {
+    position: absolute; /* Positions it relative to .project-item */
+    top: 5px; /* Align near the top */
+    bottom: 350px;
+    right: 0px; /* Align to the right */
+    z-index: 10; /* Ensures it's above other elements in .project-item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.floating-button button i {
+    color: red;
+    font-size: 30px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-item img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item p {
+    margin: 8px 0;
+}
+
+.project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.project-overlay-content {
+    background: #fff;
+    color: #F5511E;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.project-overlay-content img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.delete-button {
+  position: absolute; /* Position the button absolutely */
+  top: 0px; /* Space from the top */
+  right: 0px; /* Space from the right */
+  background: none; /* Remove default background */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor */
+  z-index: 1; /* Ensure it is above other elements */
+}
+
+.grid-professions {
+margin-top: 20px;
+display: flex; /* Change to flex for horizontal alignment */
+overflow-x: auto; /* Enable horizontal scrolling */
+scroll-snap-type: x mandatory; /* Enable snap scrolling */
+padding: 20px; /* Padding around the grid */
+transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.professions-text {
+color: #F5511E;
+}
+
+.professions-display {
+position: relative; /* Allow positioning of child elements */
+display: inline-block; /* Keep items inline */
+padding:  10px;
+border-radius: 8px;
+text-align: center;
+cursor: pointer;
+transition: transform 0.2s;
+scroll-snap-align: start; /* Snap alignment for scrolling */
+min-width: 200px; /* Minimum width for each item */
+transition: transform 0.2s;
+}
+
+.professions-item:hover {
+transform: scale(1.05);
+}
+
+.professions-item p {
+margin: 8px 0;
+}
+/* Modal Overlay */
+.btn  {
+    margin-left: 15px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal-overlays {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden; 
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.modal-overlays.show {
+  opacity: 5;
+  visibility: visible;
+}
+.modal-contents {
+       position: fixed;
+       bottom: 0;
+        background-color: white;
+        padding: 20px;
+        border-radius: 25px 25px 0 0;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        width: 100%;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+        height: 500px; 
+}
+
+.modal-contents.show {
+  transform: translateY(0);
+}
+.input-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .input-container label {
+        margin-right: 10px;
+        flex: 1;
+        text-align: right;
+        width: 80px;
+    }
+    .input-container .icon {
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+    .input-field {
+        flex: 2;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+  .modal-overlays.show .modal-contents {
+      transform: translateY(0);
+  }
+  
+  .product-imageModal img {
+    width: 80px;
+    height: 80px;
+    margin-left: 145px;
+  }
+
+  .close-button {
+    background: #F5511E;
+    border-radius: 10%;
+    width: 100px;
+    cursor: pointer;
+    padding: 3px;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#contact {
+  margin-top: 20px;
+}
