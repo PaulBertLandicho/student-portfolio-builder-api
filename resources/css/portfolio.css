@@ -614,6 +614,12 @@ margin: 8px 0;
     transition: color 0.3s ease;
 }
 
-#contact {
+.contact {
   margin-top: 20px;
+}
+
+.contact i {
+  color: #F5511E;
+  margin-right: 8px;
+  margin-left: 20px;
 }

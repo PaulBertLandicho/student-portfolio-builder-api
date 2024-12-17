@@ -11,21 +11,21 @@ export default function Contact() {
                 <h2>Contact Me</h2>
             </div>
 
-            <div className="section" style={{ display: 'inline-block', textAlign: 'left', marginLeft: '30px' }}>
-                <p id="contact">
-                    <i className="fa-solid fa-user" style={{ color: '#F5511E', marginRight: '8px' }}></i>
+            <div className="section">
+                <p className="contact">
+                    <i className="fa-solid fa-user"></i>
                     <span className="profession-text">{user.name}</span>
                 </p>
-                <p id="contact">
-                    <i className="fa-solid fa-location-dot" style={{ color: '#F5511E', marginRight: '8px' }}></i>
+                <p className="contact">
+                    <i className="fa-solid fa-location-dot" ></i>
                     <span className="profession-text">{user.address}</span>
                 </p>
-                <p id="contact">
-                    <i className="fa-solid fa-envelope" style={{ color: '#F5511E', marginRight: '8px' }}></i>
+                <p className="contact">
+                    <i className="fa-solid fa-envelope" ></i>
                     <span className="profession-text">{user.email}</span>
                 </p>
-                <p id="contact">
-                    <i className="fa-solid fa-phone" style={{ color: '#F5511E', marginRight: '8px' }}></i>
+                <p className="contact">
+                    <i className="fa-solid fa-phone" ></i>
                     <span className="profession-text">{user.contact}</span>
                 </p>
 

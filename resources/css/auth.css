@@ -255,7 +255,6 @@
     border-radius: 50%;
     margin-left: 290px;
     position: fixed; /* Fixes the position relative to the viewport */
-
     z-index: 999; /* Ensures it stays above other content */
 }
   .camera-icon-bg {
