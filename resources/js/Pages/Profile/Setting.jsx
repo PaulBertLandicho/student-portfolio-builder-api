@@ -177,7 +177,7 @@ export default function Settings({ header, children }) {
 
             {/* Skills Section */}
             <div className="py-5">
-                <div className="content" style={{ height: '330px' }}>
+                <div className="content" style={{ height: '270px' }}>
                     <div className="text" style={{ textAlign: 'center' }}>
                     <h2 style={{ display: 'inline-block', position: 'relative' }}>
                     My Skills
@@ -252,18 +252,26 @@ export default function Settings({ header, children }) {
             {showSkillModal && (
                 <div className="modal-overlay" onClick={() => setShowSkillModal(false)}>
                     <div className="modal-content" onClick={e => e.stopPropagation()}>
-                        <span className="close-modal" onClick={() => setShowSkillModal(false)}>&times;</span>
-                        <h1>Add Skills</h1>
-                        <div className="form grid-skills">
+                        <span className="close-modal" onClick={() => setShowSkillModal(false)}></span>
+                        <div className="upload-txt">
+              <p>Add Your Skills</p>
+            </div>                    
+                <div className="form grid-skills">
                             {Object.keys(skillIcons).map(skill => (
-                                <div className="skill-item" key={skill} onClick={() => {
+                                <div className={`skill-item ${
+                                    selectedSkills.includes(skill) ? "selected" : ""
+                                  }`} key={skill} onClick={() => {
                                     setSelectedSkills(prev => prev.includes(skill) ? prev.filter(s => s !== skill) : [...prev, skill]);
-                                }}>
+                                }}
+                                style={{ cursor: "pointer" }}
+                                >
                                     <img src={`/images/${skillIcons[skill]}`} alt={skill} className={selectedSkills.includes(skill) ? 'selected' : ''} />
                                 </div>
                             ))}
                         </div>
-                        <button onClick={addSkills} className="submit-button">Save Skills</button>
+                        <div className='button-container'>
+                        <button onClick={addSkills} className="submit-button">Add Skills</button>
+                    </div>
                     </div>
                 </div>
             )}
@@ -272,18 +280,28 @@ export default function Settings({ header, children }) {
             {showProfessionModal && (
                 <div className="modal-overlay" onClick={() => setShowProfessionModal(false)}>
                     <div className="modal-content" onClick={e => e.stopPropagation()}>
-                        <span className="close-modal" onClick={() => setShowProfessionModal(false)}>&times;</span>
-                        <h1>Add Professions</h1>
-                        <div className="form grid-category">
+                        <span className="close-modal" onClick={() => setShowProfessionModal(false)}></span>
+                        <div className="upload-txt">
+              <p>Add Your Professions</p>
+            </div>          
+                        <div className="form grid-profession">
                             {Object.keys(professionIcons).map(profession => (
-                                <div className="category-item" key={profession} onClick={() => {
+                                <div className={`profession-item ${
+                                    selectedProfessions.includes(profession) ? "selected" : ""
+                                  }`} key={profession} onClick={() => {
                                     setSelectedProfessions(prev => prev.includes(profession) ? prev.filter(p => p !== profession) : [...prev, profession]);
-                                }}>
+                                }}
+                                style={{ cursor: "pointer" }}
+                                >
                                     <img src={`/images/${professionIcons[profession]}`} alt={profession} className={selectedProfessions.includes(profession) ? 'selected' : ''} />
+                                    <p className="text-white" >{profession}</p>
+
                                 </div>
                             ))}
                         </div>
-                        <button onClick={addProfessions} className="submit-button">Save Professions</button>
+                        <div className='button-container'>
+                        <button onClick={addProfessions} className="submit-button">Add Professions</button>
+                    </div>
                     </div>
                 </div>
             )}

@@ -46,9 +46,11 @@ const LoadingPage = () => {
 
     return (
         <div className="loading-container">
-            <h1 style={{ textAlign: 'center', marginTop: '50px' }}>
+            <div className='loading-txt'>
+            <h1>
                 Just a moment while we personalize your portfolio
             </h1>
+            </div>
             <header id="loadingHeader" className="futuristic-header"></header>
 
             {/* Loading Spinner, will hide after 3 seconds */}

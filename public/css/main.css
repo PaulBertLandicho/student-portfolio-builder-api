@@ -54,12 +54,18 @@ body {
   font-weight: 600;
 }
 
+.input-container input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .btn {
   width: 350px;
   height: 50px;
   margin-top: 30px;
   font-size: 17px;
-  background-color:  #F5511E;
+  background-color: #F5511E;
   color: #fff;
   border: none;
   border-radius: 10px;

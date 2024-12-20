@@ -96,7 +96,9 @@ export default function ProfilePic() {
             className="modal-content"
             onClick={(event) => event.stopPropagation()}
           >
-            <h2>About Me :</h2>
+            <div className="upload-txt">
+              <p>About Me :</p>
+            </div>        
             <textarea
               id="aboutMeText"
               rows="4"
@@ -104,9 +106,11 @@ export default function ProfilePic() {
               value={aboutMe}
               onChange={(e) => setAboutMe(e.target.value)}
             ></textarea>
-            <button className="aboutbutton" onClick={saveAboutMe}>
+            <div className='button-container'>
+            <button className="submit-button" onClick={saveAboutMe}>
               Save
             </button>
+            </div>
           </div>
         </div>
       )}

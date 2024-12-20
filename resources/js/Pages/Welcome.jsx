@@ -12,22 +12,25 @@ const Onboarding = () => {
     },
     {
       img: "images/intro.png",
-      title: "Studies show that job applicants with a portfolio are more likely to get hired.",
+      text: "Studies show that job applicants with a professional portfolio mobile are more likely to get hired than those without one",
       description:
         "Create personalized portfolio websites that impress potential clients & employers.",
     },
     {
       img: "images/intro.png",
-      title: "Nearly 80% of recruiters prefer to see a candidate’s portfolio.",
+      text: "Nearly 80% of recruiters and hiring managers prefer to see a candidate’s portfolio mobile during the hiring",
       description:
         "Stunning online presence with portfolio’s easy-to-use interface.",
     },
     {
       img: "images/intro.png",
-      title: "Expand your network & attract new opportunities.",
+      text: "Expand your Network & attract New Business Opportunities",
       description:
-        "Over 60% of professionals report new leads through their portfolio websites.",
-    },
+        " • Over 60% of professionals report new leads through their portfolio websites.",
+        description2: " • Freelancers with a professional portfolio website earn, on average, 40% more than those without one.",
+        description3: " • Over 90% of portfolio users report a significant increase in visibility."
+    }
+    
   ];
 
   const handleNextSlide = () => {
@@ -80,14 +83,29 @@ const Onboarding = () => {
             style={{
               fontWeight: "bold",
               color: "#F5511E",
-              fontSize: "40px",
+              fontSize: "50px",
             }}
           >
             {slide.title}
           </h1>
-          <p style={{ color: "black", fontSize: "15px", marginTop: "20px" }}>
+          <h2
+            style={{fontWeight: "bold",
+              color: "#F5511E",
+              fontSize: "25px",
+             
+            }}
+            >
+               {slide.text}
+          </h2>
+          <h3 style={{ color: "black", fontSize: "16px", marginTop: "30px" }}>
             {slide.description}
-          </p>
+          </h3>
+          <h3 style={{ color: "black", fontSize: "16px", marginTop: "30px" }}>
+            {slide.description2}
+          </h3>
+           <h3 style={{ color: "black", fontSize: "16px", marginTop: "30px" }}>
+            {slide.description3}
+          </h3>
           {index === slides.length - 1 && (
             <button
               onClick={handleSwitchPage}
@@ -99,7 +117,7 @@ const Onboarding = () => {
                 padding: "20px 130px",
                 borderRadius: "50px",
                 boxShadow: "5px 5px black",
-                marginTop: "20px",
+                marginTop: "110px",
               }}
             >
               Get Started
@@ -115,6 +133,8 @@ const Onboarding = () => {
             onClick={() => setCurrentSlide(index)}
           ></span>
         ))}
+               <hr style={{ border: "1px solid #F5511E80",  width :"410px", marginTop : "30px" }} />
+
       </div>
     </div>
   );

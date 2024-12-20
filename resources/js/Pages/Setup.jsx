@@ -119,33 +119,28 @@ const handleOpenModal = () => setShowModal(true);
         {step === 1 && (
           <div className="info">
                                 <img src="images/computer.png" style={{ width: "350px", margintop: "10px", marginBottom: "50px" }} />
-            <h1>Who are you creating a portfolio for?</h1>
+            <h2>Who are you creating a portfolio for?</h2>
+            <div className='text-black'>
             <div className="option">
-            <div className="container" onClick={() => setProfileData({ ...profileData, role_id: "1" })}>
-              <label htmlFor="status_single">A single individual for myself</label>
-              <input
-                type="radio"
-                id="status_single"
-                name="status"
-                value="1"
-                checked={profileData.role_id === "1"}
-                onChange={handleInputChange}
-              />
-            </div>
+  <div
+    className={`container ${profileData.role_id === "1" ? "selected" : ""}`}
+    onClick={() => setProfileData({ ...profileData, role_id: "1" })}
+  >
+    <label htmlFor="status_single">A single individual for myself</label>
+    <i className={`check-icon ${profileData.role_id === "1" ? "fas fa-check-circle" : "far fa-circle"}`}></i>
+  </div>
 
-            <div className="container" onClick={() => setProfileData({ ...profileData, role_id: "2" })}>
-              <label htmlFor="status_group">A group of people</label>
-              <input
-                type="radio"
-                id="status_group"
-                name="status"
-                value="2"
-                checked={profileData.role_id === "2"}
-                onChange={handleInputChange}
-              />
-            </div>
+  <div
+    className={`container ${profileData.role_id === "2" ? "selected" : ""}`}
+    onClick={() => setProfileData({ ...profileData, role_id: "2" })}
+  >
+    <label htmlFor="status_group">A group of people</label>
+    <i className={`check-icon ${profileData.role_id === "2" ? "fas fa-check-circle" : "far fa-circle"}`}></i>
+  </div>
+</div>
+
           </div>
-            <div className="button-container" style={{ marginLeft: "230px" }}>
+            <div className="button-container" style={{ marginLeft: "115px" }}>
             <button type="button" className="btn next-btn" onClick={() => setStep(2)}>
               NEXT
             </button>
@@ -170,7 +165,7 @@ const handleOpenModal = () => setShowModal(true);
                             <div className="upload-txt">
                     <p>Upload Your Profile</p>
                 </div>
-           <div className="info">
+           <div className="note">
             <h2>What’s your Fullname?</h2>
             </div>
             
@@ -193,7 +188,7 @@ const handleOpenModal = () => setShowModal(true);
                   value="Male"
                   checked={profileData.gender === "Male"}
                   onChange={handleInputChange}
-                />                    <label for="gender_male" style= {{ marginRight: "50px" }}>Male</label>
+                />                    <label for="gender_male" style= {{ marginRight: "50px" }}>Male  <i className="fas fa-mars" style={{ marginLeft: "5px", color: "blue" }}></i></label>
 <input
                   type="radio"
                   name="gender"
@@ -201,7 +196,7 @@ const handleOpenModal = () => setShowModal(true);
                   checked={profileData.gender === "Female"}
                   onChange={handleInputChange}
                 />
-                                    <label for="gender_female">Female</label>
+                                    <label for="gender_female">Female <i className="fas fa-venus" style={{ marginLeft: "5px", color: "red" }}></i></label>
                 </div>
                 <div className="button-container">
             <button type="button" class="back-arrow" onClick={() => setStep(1)}>
@@ -249,7 +244,9 @@ const handleOpenModal = () => setShowModal(true);
                 <div className="modal-overlays show">
                     <div className="modal-contents" ref={modalRef}>
                         <button onClick={handleCloseModal} className="close-button"></button>
-                        <h1 style={{ textAlign: "center"}} >Add Project</h1>
+                        <div className="upload-txt">
+              <p>Add Address</p>
+            </div>                    
                            
                             <div className="input-container">
                               
@@ -300,7 +297,7 @@ const handleOpenModal = () => setShowModal(true);
             />
         
             <div className="upload-txt">
-              <p>Upload Your Profile</p>
+              <p>Select Your Skills</p>
             </div>
         
             <div className="form grid-skills">

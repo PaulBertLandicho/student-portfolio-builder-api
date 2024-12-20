@@ -11,7 +11,7 @@ export default function Contact() {
                 <h2>Contact Me</h2>
             </div>
 
-            <div className="section">
+            <div className="contact-container">
                 <p className="contact">
                     <i className="fa-solid fa-user"></i>
                     <span className="profession-text">{user.name}</span>
